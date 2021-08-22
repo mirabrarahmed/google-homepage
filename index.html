@@ -50,7 +50,28 @@
                 border: 1px solid #dadce0;
                 color: #202124;
             }
+            .navbar li{
+                list-style-type: none;
+                padding: 5px;
+                margin: 0px;
+                display: inline;
+            }
+            .footer_settings li {
+                list-style-type: none;
+                padding: 5px;
+                margin: 0px;
+                display: inline;
+            }
         </style>
+        <nav class='navbar'>
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Store</a></li>
+                <li style="float: right"><button style="background-color: aqua; border:1px solid white; cursor: pointer;">Sign in</button></li>
+                <li style="float: right"><a>Images</a></li>
+                <li style="float: right"><a>Gmail</a></li>
+            </ul>
+        </nav>
     </head>
     <body>
         <div class='full_page'>
@@ -71,5 +92,17 @@
                 </div>
             </form>
         </div>
+        <footer>
+            <div class="footer_settings">
+                <ul>
+                    <li><a>Advertising</a></li>
+                    <li><a>Business</a></li>
+                    <li><a>How Search Works</a></li>
+                    <li style="float: right"><a>Settings</a></li>
+                    <li style="float: right"><a>Terms</a></li>
+                    <li style="float: right"><a>Privacy</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
