@@ -1,22 +1,75 @@
 <html>
     <head>
         <style>
-            .search_engine {
+            .full_page{
+                display: flex;
+                flex-direction: column;
+                height: 100%; 
+            }
+            .logo_box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .search_button{
-                padding: 0px;
-                margin: 5px;
+            .google_logo {
+                padding-top: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .google_image {
+                max-height: 100%;
+                max-width: 50%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+            }
+            .search_box {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10px;
+            }
+            .search_bar{
+                height: 50px;
+            }
+            .search_engine {
+                height: 34px;
+                width: 548px;
+            }
+            .box_under input[type="submit"] {
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            .box_under input[type="submit"]:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
             }
         </style>
     </head>
     <body>
-        <div class='search_engine'>
-            <img class="google_image", src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' /> 
-            <input class= "search_engine" type= "text" style='display: flex;'/>
-            <button class='search_button' type='submit'>Search</button>
+        <div class='full_page'>
+            <div class='logo_box'>
+                <div class='google_logo'>
+                    <img class="google_image", src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' />
+                </div>
+            </div>
+            <form actin='/search' method='GET' role='search'>
+                <div class='search_box'>
+                    <div class='search_bar'>
+                        <input class= "search_engine" type= "text" />
+                    </div>
+                    <div class='box_under'>
+                        <input type='submit' value="Google Search" />
+                        <input type='submit' value="I'm Feeling Lucky" />
+                    </div>  
+                </div>
+            </form>
         </div>
     </body>
 </html>
