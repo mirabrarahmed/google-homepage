@@ -1,50 +1,50 @@
 <html>
     <head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <style>
-            .full_page{
+            .full-page{
                 display: flex;
                 flex-direction: column;
-                height: 100%; 
+                height: 92%; 
             }
-            .logo_box {
+            .logo-box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .google_logo {
+            .google-logo {
                 padding-top: 100px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .google_image {
+            .google-image {
                 max-height: 100%;
                 max-width: 50%;
                 object-fit: contain;
                 object-position: center bottom;
                 width: auto;
             }
-            .search_box {
+            .search-box {
                 margin: auto;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding-top: 10px;
             }
-            .search_bar{
-                height: 50px;
-            }
-            .search_engine {
+            .search-engine {
                 height: 34px;
                 width: 548px;
+                border: none;
             }
-            .box_under input[type="submit"] {
+            .box-under input[type="submit"] {
                 border: 1px solid #f8f9fa;
                 border-radius: 4px;
                 cursor: pointer;
                 font-size: 14px;
             }
-            .box_under input[type="submit"]:hover {
+            .box-under input[type="submit"]:hover {
                 box-shadow: 0 1px 1px rgba(0,0,0,.1);
                 background-color: #f8f9fa;
                 border: 1px solid #dadce0;
@@ -56,36 +56,53 @@
                 margin: 0px;
                 display: inline;
             }
-            .footer_settings li {
+            .footer-settings li {
                 list-style-type: none;
                 padding: 5px;
                 margin: 0px;
                 display: inline;
+            }
+            .bar-with-icon{
+                display: flex;
+                width: 646px;
+                justify-content: space-evenly;
+                border: 1px solid #a1a89073;
+                border-radius: 27px;
+            }
+            .material-icons{
+                padding-top: 5px;
+            }
+            .box-under{
+                padding-top: 20px;
             }
         </style>
         <nav class='navbar'>
             <ul>
                 <li><a>About</a></li>
                 <li><a>Store</a></li>
-                <li style="float: right"><button style="background-color: aqua; border:1px solid white; cursor: pointer;">Sign in</button></li>
+                <li style="float: right"><button style="background-color: rgb(55, 129, 226); border:1px solid white; cursor: pointer;">Sign in</button></li>
                 <li style="float: right"><a>Images</a></li>
                 <li style="float: right"><a>Gmail</a></li>
             </ul>
         </nav>
     </head>
     <body>
-        <div class='full_page'>
-            <div class='logo_box'>
-                <div class='google_logo'>
-                    <img class="google_image", src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' />
+        <div class='full-page'>
+            <div class='logo-box'>
+                <div class='google-logo'>
+                    <img class="google-image", src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' />
                 </div>
             </div>
             <form actin='/search' method='GET' role='search'>
-                <div class='search_box'>
-                    <div class='search_bar'>
-                        <input class= "search_engine" type= "text" />
+                <div class='search-box'>
+                    <div class='bar-with-icon'>
+                        <i class="material-icons">search</i>
+                        <div class='search-bar'>
+                            <input class= "search-engine" type= "text" />
+                        </div>
+                        <i class="material-icons">mic</i>
                     </div>
-                    <div class='box_under'>
+                    <div class='box-under'>
                         <input type='submit' value="Google Search" />
                         <input type='submit' value="I'm Feeling Lucky" />
                     </div>  
@@ -93,7 +110,7 @@
             </form>
         </div>
         <footer>
-            <div class="footer_settings">
+            <div class="footer-settings">
                 <ul>
                     <li><a>Advertising</a></li>
                     <li><a>Business</a></li>
